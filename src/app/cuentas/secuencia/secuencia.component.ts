@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-listado',
-  templateUrl: './listado.component.html',
-  styleUrls: ['./listado.component.css']
+  templateUrl: './secuencia.component.html',
+  styleUrls: ['./secuencia.component.css']
 })
 export class ListadoComponent implements OnInit {
 

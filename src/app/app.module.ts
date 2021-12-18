@@ -5,7 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CuentasModule } from './cuentas/cuentas.module';
 import { FinancieraComponent} from './financiera/financiera.component';
-import { ListadoComponent } from './cuentas/listado/listado.component';
+import { ListadoComponent } from './cuentas/secuencia/secuencia.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ListadoComponent } from './cuentas/listado/listado.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CuentasModule
+    CuentasModule,
+    FlexLayoutModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

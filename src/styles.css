@@ -10,7 +10,7 @@
     color: #3e4144;
     -webkit-font-smoothing: antialiased;
   }
-  
+
   
   dd {
     font-weight: bold;
@@ -38,3 +38,10 @@
   .p-1 {
     padding: 1px;
   }
+
+  text-center {
+    text-align: center;
+
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
