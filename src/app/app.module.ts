@@ -3,8 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CuentasModule } from './cuentas/cuentas.module';
 import { FinancieraComponent} from './financiera/financiera.component';
-import { ListadoComponent } from './pagos/listado/listado.component';
+import { ListadoComponent } from './cuentas/listado/listado.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ListadoComponent } from './pagos/listado/listado.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CuentasModule
   ],
   providers: [],
   bootstrap: [AppComponent]
