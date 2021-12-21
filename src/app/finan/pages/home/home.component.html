@@ -3,3 +3,79 @@
 <hr />
 
 <router-outlet></router-outlet>
+
+<mat-sidenav-container fullscreen>
+
+    <mat-sidenav #sidenav mode = "push">
+
+        <mat-toolbar>
+            <span>Menu</span>
+            <button mat-icon-button (click)=" sidenav.toggle ()"> 
+                    
+                <mat-icon>
+                    
+    
+                    menu
+    
+                </mat-icon>
+    
+            
+    
+            </button>
+    
+        </mat-toolbar>
+    
+        <mat-nav-list>
+
+            <a router-link ="./finan/listado" mat-list-item (click)=" sidenav.toggle ()">
+                <mat-icon>label</mat-icon>
+                <span>Listado</span>
+            </a>
+             
+            
+            <a router-link ="./finan/listado" mat-list-item (click)=" sidenav.toggle ()">
+                <mat-icon>add</mat-icon>
+                <span>Crear cliente</span>
+            </a>
+             
+            <a router-link ="./finan/listado" mat-list-item (click)=" sidenav.toggle ()">
+                <mat-icon>search</mat-icon>
+                <span>buscar cliente</span>
+            </a>
+             
+        </mat-nav-list>
+        
+       
+
+    </mat-sidenav>
+    
+    
+    <mat-toolbar>
+        <button mat-icon-button (click)=" sidenav.toggle ()"> 
+                
+            <mat-icon>
+                
+
+                menu
+
+            </mat-icon>
+
+        
+
+        </button>
+        <span class="spacer"> </span>
+        <button mat-button>
+            Salir
+        </button>
+    
+        
+    </mat-toolbar>
+
+        
+<div class="container">
+
+    <router-outlet></router-outlet>
+    
+    </div>
+
+</mat-sidenav-container>
