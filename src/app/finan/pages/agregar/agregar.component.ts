@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
+
 
 @Component({
   selector: 'app-agregar',
@@ -14,3 +18,4 @@ export class AgregarComponent implements OnInit {
   }
 
 }
+

@@ -69,7 +69,8 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "bancaria1:build:production"
+              "browserTarget": "bancaria1:build:production",
+              "proxyConfig": "proxy.conf.json"
             },
             "development": {
               "browserTarget": "bancaria1:build:development"

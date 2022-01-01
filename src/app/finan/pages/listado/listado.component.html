@@ -1,1 +1,37 @@
-<p>listado works!</p>
+
+
+
+
+<h1>listado de clientes</h1>
+<mat-divider></mat-divider>
+<br>
+
+<mat-card *ngFor="let financiera of financieras">
+    <mat-card-header>
+        <mat-card-title> {{ financiera .nombre}} </mat-card-title>
+        <mat-card-subtitle>{{ financiera .apellido}} </mat-card-subtitle>
+
+    </mat-card-header>
+
+    <mat-card-content>
+        <h3> {{ financiera .correo}}</h3>
+
+        <p>
+            <strong>Tipo de Cuenta </strong> {{ financiera .tipoCuenta }}
+        </p>
+    </mat-card-content>
+
+    <mat-card-actions>
+        <button mat-button color="warn"
+        [routerLink]="[ ]">
+            LEER MAS
+        </button>
+    </mat-card-actions>
+
+    <mat-card-actions>
+        <button mat-button color="primary"
+        [routerLink]="[ ]">
+            MODIFICAR
+        </button>
+    </mat-card-actions>
+</mat-card>
