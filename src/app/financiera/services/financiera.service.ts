@@ -17,8 +17,11 @@ export class financieraService {
           return  this.http.get<Financiera[]>('http://localhost:8080/ApiRest/users');
         }
          
+        
+        
+         
+        
 
-       
+        }
     
 
-}

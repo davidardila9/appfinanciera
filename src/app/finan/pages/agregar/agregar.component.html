@@ -1,56 +1,58 @@
-<p>Nuevo cliente</p>
+<h1>Nuevo cliente   </h1> 
 
 
 
 
    
-    <form>
+        <form #clienteForm = "">
+
+
         <div class="form-group">
           <label for="exampleNombre">Nombre</label>
-          <input type="text" class="form-control" id="exampleDavid" aria-describedby="emailHelp" placeholder="Introduzca su nombre">
+          <input type="text"  formControlName="Nombre" class = "form-control" placeholder="Introduzca su nombre" >
          
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Apellido</label>
-          <input type="text" class="form-control" id="exampleArdila" placeholder="Inserte su apellido">
+          <input type="text" formControlName="Apellido" class = "form-control" placeholder="Inserte su apellido">
         </div>
 
         <div class="form-group">
             <label for="exampleTipoIdentificacion">Tipo de identificacion</label>
-            <input type="text" class="form-control" id="examplecedula" aria-describedby="emailHelp" placeholder="Introduzca su tipo de identificacion">
+            <input type="text" formControlName="TipoId" class = "form-control" placeholder="Introduzca su tipo de identificacion">
           
           </div>
 
           <div class="form-group">
             <label for="example1012120">Numero de identificacion</label>
-            <input type="number" class="form-control" id="example121212" placeholder="Numero de identificacion">
+            <input type="number" formControlName="ID" class = "form-control" placeholder="Numero de identificacion">
            
           </div>
 
           <div class="form-group">
             <label for="exampleInputPassword1">Fecha De Nacimiento</label>
-            <input type="number" class="form-control" id="example20061990" placeholder="DD/MM/YYYY" >
+            <input type="number" formControlName="Fecha_Nacimiento" class = "form-control" placeholder="DD/MM/YYYY" >
           </div>
 
           <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <label for="exampleInputEmail1">Correo electrónico</label>
+            <input type="email" formControlName="correo" class = "form-control" placeholder="Ingrese su correo electrónico">
            
           </div>
 
           <div class="form-group">
             <label for="exampleInputPassword1">Tipo de Cuenta</label>
-            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Quieres una cuenta de ahorros o corriente?">
+            <input  type="text" formControlName="Tipo_Cuenta" class = "form-control" placeholder="Quieres una cuenta de ahorros o corriente?">
           </div>
 
         <div class="form-group">
             <label for="example1234">Deposito Inicial en tu cuenta</label>
-            <input type="number" class="form-control" id="example1234" aria-describedby="emailHelp" placeholder="Cuanto quieres depositar?">
+            <input type="number" formControlName="Saldo_Cuenta" class = "form-control" placeholder="Cuanto quieres depositar?">
         </div>
 
         <div class="form-group">
             <label for="example20081993">Fecha de creacion</label>
-            <input type="number" class="form-control" id="example20081993" aria-describedby="emailHelp" placeholder="DD/MM/YYYY" >
+            <input type="number" formControlName="Fecha_Creacion" class = "form-control" placeholder="DD/MM/YYYY" >
         </div>
 
 
@@ -58,11 +60,12 @@
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">los datos son correctos</label>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary"  >submit</button>
       </form>
 
-   
-    
+<mat-form-field>
+  <mat-label>holis</mat-label>
+</mat-form-field>   
     
 
 

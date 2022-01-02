@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { financieraService } from 'src/app/financiera/services/financiera.service';
 import { Financiera } from '../../interface/financiera.interface';
 
@@ -11,8 +12,17 @@ import { Financiera } from '../../interface/financiera.interface';
 })
 export class ClienteComponent implements OnInit {
 
+ 
+
   financieras: Financiera [] = [];
-  constructor(private financieraService: financieraService   ) { }
+  constructor(private financieraService: financieraService   )
+  
+  { 
+
+    
+
+
+  }
 
   ngOnInit(): void {
     this.financieraService.getFinanciera () .subscribe (res => {
@@ -20,6 +30,7 @@ export class ClienteComponent implements OnInit {
       this.financieras = res;
     } )
     
+   
   }
 
 }

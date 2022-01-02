@@ -1,11 +1,20 @@
+
+
 <h1>listado completo  de clientes</h1>
 <mat-divider></mat-divider>
-<br>
+<br>    
+
+<div fxLayout="row wrap">
 
 <mat-card *ngFor="let financiera of financieras">
     <mat-card-header>
         <mat-card-title> {{ financiera .nombre}} </mat-card-title>
         <mat-card-subtitle>{{ financiera .apellido}} </mat-card-subtitle>
+
+        
+    </mat-card-header>
+
+    <mat-card-content>
 
         <p>
             <small>Tpo de identificacion </small> {{ financiera .tipoID}}
@@ -16,9 +25,7 @@
         <h2>
             <small>Numero de identificacion </small> {{ financiera .id}}
         </h2>
-    </mat-card-header>
 
-    <mat-card-content>
         <h3> {{ financiera .correo}}</h3>
 
         <p>
@@ -41,15 +48,26 @@
 
     <mat-card-actions >
         <button mat-button color="warn"
-        [routerLink]="[ ]">
-            LEER MAS
+        [routerLink]="['/finan/editar' ]">
+            MODIFICAR
         </button>
     </mat-card-actions>
 
     <mat-card-actions>
         <button mat-button color="primary"
-        [routerLink]="[ ]">
-            MODIFICAR
+        [routerLink]="['/finan/agregar', financiera.id ]">
+            LEER MAS
         </button>
     </mat-card-actions>
 </mat-card>
+
+    
+</div>
+
+<li>
+    <a routerLink="/finan/home">
+        Regresar
+    </a>
+    </li>
+
+   

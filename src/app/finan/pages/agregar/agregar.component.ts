@@ -1,6 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { Component, NgModule, OnInit } from '@angular/core';
+import { FormBuilder, FormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { Financiera } from '../../interface/financiera.interface';
+import {MatSelectModule} from '@angular/material/select'
+
 
 
 
@@ -10,12 +13,36 @@ import {MatFormFieldModule} from '@angular/material/form-field';
   styles: [
   ]
 })
+
+
+
 export class AgregarComponent implements OnInit {
 
-  constructor() { }
+
+  nuevoCliente:  Financiera = {
+    nombre: '',
+    apellido: '',
+    tipoID: '',
+    id: '',
+    fecha_Nacimiento: '',
+    correo: '',
+    tipoCuenta: '',
+    saldoCuenta: '',
+    fecha_Creacion: '',
+    numero: '',
+
+
+
+
+  };
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
-  }
 
+    
+
+    }
+  
+
+  
 }
-

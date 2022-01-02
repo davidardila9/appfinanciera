@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {MatIconModule} from '@angular/material/icon';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -12,9 +13,12 @@ import {MatIconModule} from '@angular/material/icon';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
+
+    this.activatedRoute.params.subscribe (console.log)
   }
+
 
 }

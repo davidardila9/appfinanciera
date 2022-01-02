@@ -1,12 +1,12 @@
 export interface Financiera {
     correo:           string;
-    id:               number;
+    id:               string;
     fecha_Nacimiento: string;
-    numero:           number;
+    numero:           string;
     tipoID:           string;
     nombre:           string;
     apellido:         string;
-    saldoCuenta:      number;
+    saldoCuenta:      string;
     tipoCuenta:       string;
     fecha_Creacion:   string;
 }
