@@ -19,7 +19,7 @@ import {MatSelectModule} from '@angular/material/select'
 export class AgregarComponent implements OnInit {
 
 
-  nuevoCliente:  Financiera = {
+  formulario = {
     nombre: '',
     apellido: '',
     tipoID: '',

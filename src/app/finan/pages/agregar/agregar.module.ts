@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -10,10 +11,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
     declarations: [],
     imports: [
+      CommonModule, 
       FormsModule,
       MatFormFieldModule,
       ReactiveFormsModule,
-      BrowserAnimationsModule
+      BrowserAnimationsModule,
+      
     ],
 
     exports: [

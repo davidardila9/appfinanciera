@@ -3,6 +3,9 @@ import { Financiera } from '../../interface/financiera.interface';
 import {Input} from '@angular/core'
 import { ActivatedRoute } from '@angular/router';
 
+
+
+
 @Component({
   selector: 'app-tarjeta',
   templateUrl: './tarjeta.component.html',
@@ -10,11 +13,13 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class TarjetaComponent implements OnInit {
 
-constructor(private activatedRoute: ActivatedRoute) {}
+constructor() {}
 
-  @Input() financiera!: Financiera
+
+
 
   ngOnInit (): void {
 
-  }
+    
+}
 }

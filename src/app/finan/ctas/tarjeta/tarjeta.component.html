@@ -1,20 +1,90 @@
 <h1>movimientos bancarios de los clientes</h1>
 
+<div fxLayout = "row" fxLayoutGap="70px"> 
 
-<ng-template #divFinanciera>
+<button type="button" class="btn btn-primary">Buscar cliente por Id</button>
 
 
-    <div fxLayout="row">
+<button type="button" class="btn btn-success">Consignacion</button>
 
-        <div fxFlex="50">
-            1
+
+<button type="button" class="btn btn-danger">Retiro</button>
+
+
+
+
+</div>
+
+
+
+<br>
+<br>
+<hr>
+
+<h2 >
+
+<div class="row" >
+    <div class="col-">
+<form >
+
+    <div class="mb-3 row">
+        <label class="col-sm-3 col-form-label">Cliente</label>
+        <div class="col-sm-9">
+            <input 
+            type="text"
+            class="form-control"
+            placeholder="Nombre del cliente">
+
+
+
+        </div>
         </div>
 
-        <div fxFlex="50">
-            2
+      <div class="mb-3 row">
+        <label class="col-sm-3 col-form-label">Valor de la transación</label>
+        <div class="col-sm-9">
+            <input 
+            type="number"
+            class="form-control"
+            placeholder="Valor de la transación">
+
+
+            
         </div>
-
-
+  
     </div>
 
-</ng-template>
+    <div class="mb-3 row">
+        <label class="col-sm-3 col-form-label">Tipo de Cuenta</label>
+        <div class="col-sm-9">
+            <input 
+            type="text"
+            class="form-control"
+            placeholder="Tipo de Cuenta">
+
+
+            
+        </div>
+  
+    </div>
+
+
+</form>
+
+</div>
+</div>
+</h2>
+
+<br>
+<br>
+<hr>
+
+
+<!--Boton de realizar transaccion-->
+<div fxLayout = "row" fxLayoutGap="70px"> 
+
+    <button type="submit" class="btn btn-outline-info" >Realizar Transacción</button>
+
+    <button type="submit" class="btn btn-primary float-end">Regresar</button>
+
+</div>
